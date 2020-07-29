@@ -129,7 +129,7 @@ def test_compile_model_android_armv7(sagemaker_session):
         job_name="compile-model",
         target_platform_os="ANDROID",
         target_platform_arch="ARM_EABI",
-        compiler_options={"ANDROID_PLATFORM": 25, "mattr": ["+neon"]},
+        compiler_options={"ANDROID_PLATFORM": 24, "mattr": ["+neon"]},
     )
     assert model._is_compiled_model is False
 
